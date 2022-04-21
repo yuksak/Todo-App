@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="src/main.scss" />
+
+    <title>Todo list</title>
+
+    <script type="module" defer src="src/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Stuff i need to do</h1>
+      <div class="header__info">
+        <span class="header__time">Time</span>
+        <span class="header__date">Date</span>
+      </div>
+    </header>
+
+    <div class="list">
+      <h2 class="list__header">
+        My lists
+        <button class="header-delete list__delete">Delete</button>
+      </h2>
+
+      <form action="" class="list__form">
+        <input
+          type="text"
+          class="new new__list list__input"
+          placeholder="New list name"
+          aria-label="New list name"
+          maxlength="25"
+        />
+        <button class="btn btn__create" aria-label="Create new list">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg>"
+          >
+            <rect x="5.8" y="10.2" width="10" height="1.5" fill="white" />
+            <rect x="10.2" y="5.8" width="1.5" height="10" fill="white" />
+          </svg>
+        </button>
+      </form>
+
+      <ul class="list__section">
+        <!-- <div class="list__item">
+          <li class="list__name list__name--active"></li>
+          <button class="list__delete">-</button>
+        </div> -->
+      </ul>
+    </div>
+    <!-- <button class="list__delete">Delete</button> -->
+
+    <div class="todo">
+      <div class="todo__header">
+        <h2 class="todo__title"></h2>
+        <div>
+          <p class="todo__count"></p>
+          <button class="btn btn__delete">Clear completed tasks</button>
+        </div>
+      </div>
+
+      <div class="todo__body">
+        <div class="todo__create">
+          <form class="todo__form">
+            <input
+              type="text"
+              class="new new__task todo__input"
+              placeholder="New task name"
+              aria-label="New task name"
+            />
+            <button class="btn btn__create-task" aria-label="Create new task">
+              Create
+            </button>
+          </form>
+        </div>
+
+        <div class="todo__tasks">
+          <!-- <div class="todo__task">
+            <input type="checkbox" id="task-1" />
+
+            <label for="task-1">
+              record todo list video
+              <span class="custom-checkbox"></span>
+              <span class="task-completed">Completed</span>
+            </label>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
